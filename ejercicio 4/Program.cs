@@ -15,6 +15,10 @@ namespace ejercicio_4
             ciudades.Add(1, "Guatemala");
             ciudades.Add(2, "Antigua");
             ciudades.Add(3, "Peten");
+            ciudades.Add(4, "Escuintla");
+            ciudades.Add(5, "Xela");
+
+            Console.WriteLine("Ciudad con codigo 3: " + ciudades[3]);
         }
     }
 }

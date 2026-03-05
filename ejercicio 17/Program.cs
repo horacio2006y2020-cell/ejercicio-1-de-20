@@ -22,6 +22,28 @@ namespace ejercicio_17
             opcion = int.Parse(Console.ReadLine());
 
             switch (opcion)
+                {
+                    case 1:
+                        Console.Write("Codigo: ");
+                        int c = int.Parse(Console.ReadLine());
+                        Console.Write("Producto: ");
+                        string p = Console.ReadLine();
+                        inventario[c] = p;
+                        break;
+
+                    case 2:
+                        Console.Write("Codigo: ");
+                        c = int.Parse(Console.ReadLine());
+                        inventario.Remove(c);
+                        break;
+
+                    case 3:
+                        foreach (var item in inventario)
+                            Console.WriteLine(item.Key + " " + item.Value);
+                        break;
+                }
+
+            } while (opcion != 0);
         }
     }
 }

@@ -10,7 +10,12 @@ namespace ejercicios
     {
         static void Main(string[] args)
         {
+            Dictionary<int, string> estudiantes = new Dictionary<int, string>();
 
+            estudiantes.Add(1, "Juan");
+            estudiantes.Add(2, "Maria");
+            estudiantes.Add(3, "Carlos");
+            Console.WriteLine("Nombre con ID 2: " + estudiantes[2]);
         }
     }
 }
